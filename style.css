@@ -85,6 +85,12 @@ main.Cursos div img{
 main.Cursos div.img-principal{
     grid-row: span 1
 }
+ /*charlemos, mobile*/
+ main.Charlemos{
+    margin-top: 15%;
+    align-items: center;
+    text-align: center;
+ }
 
 
 /*mq de tablet*/
