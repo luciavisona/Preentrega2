@@ -1,0 +1,192 @@
+/* estilos del nav */
+
+header .pink-bg{
+    background-color: pink;
+}
+
+header .vacio-bg{
+    background-color: rgba(199, 88, 106, 0);
+}
+
+header .grey-bg{
+    background-color: rgb(177, 177, 177) ;
+}
+
+header nav a.logo-barra{
+    color:  rgb(177, 177, 177);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+}
+
+header nav a.azul-logo{
+    color:  #283845;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5vw;
+    font-weight: 700;
+
+}
+
+
+/*home, mobile - general*/
+main.home{
+    display: grid;
+    gap:20px
+
+}
+
+main .home-uno, main .home-dos{
+    display: none;
+}
+
+main.home div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*equipo, mobile-general*/
+main.equipo{
+    text-align: center;
+}
+
+/*portfolio, mobile-general*/
+main.Portfolio{
+    display:grid; 
+
+    margin-top: 15%;
+
+    height: 20vh;
+    gap: 7px;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(6, 60%);
+
+}
+
+main.Portfolio div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*cursos, mobile-general*/
+main.cursos{
+    display: grid;
+    grid-template-columns:50% 50%;
+    grid-template-rows: 60% 10% 30% 10%;
+}
+main.Cursos div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+main.Cursos div.img-principal{
+    grid-row: span 1
+}
+
+
+/*mq de tablet*/
+@media screen and (min-width: 600px){
+
+    body{
+        margin-top: 5vh;
+
+    }
+/* home, tablet*/
+    main .home-uno, main .home-dos{
+        display:block
+    }
+
+    main.home{
+        display:grid; 
+
+        height: 40vh;
+        grid-template-columns:1fr;
+        grid-template-rows: repeat(3, 60%);
+    }
+/*portfolio, tablet*/
+main.Portfolio{
+    display:grid; 
+
+    margin-top: 15%;
+
+    height: 60vh;
+
+    grid-template-columns:50% 50%;
+    grid-template-rows: repeat(3, 40%);
+    gap: 10px;
+
+}
+
+main.Portfolio div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+}
+/*mq de desktop*/
+@media screen and (min-width: 1024px){
+    main .img-uno, main .img-dos{
+        display:block
+    }
+/* home, desktop*/
+    main.home{
+        display:grid; 
+
+        margin-top: 0;
+        height: 100vh;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 50% 50%;
+    }
+    main .home-tres{
+        grid-row: span 2;
+    }
+/*equipo, desktop*/
+    main.equipo{
+        display: grid;
+
+        margin-top: 0;
+        height: 100vh;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 50% 20%;
+        
+    }
+    main.equipo-img-uno{
+        grid-column: 1 / 2;
+        grid-row: 1/2;
+
+    }
+    main.equipo-img-dos{
+        grid-column: 2 / 3;
+        grid-row: 1/2;
+    }
+
+    main.equipo-img-tres{
+        grid-column: 3 / 4;
+        grid-row: 1/2;
+    }
+  
+    /*portfolio, desktop*/
+main.Portfolio{
+    display:grid; 
+
+    margin-top: 15%;
+
+    height: 60vh;
+
+    grid-template-columns:50% 50%;
+    grid-template-rows: repeat(6, 90%);
+    gap: 10px;
+
+}
+
+main.Portfolio div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+    
+}
