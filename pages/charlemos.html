@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link de bt-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!-- link de mi css-->
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Preentrega 2</title>
+</head>
+
+<body class="charlemos-bd">
+  <header>
+    <!-- menu hamburguesa con bt -->
+    <nav class="navbar fixed-top pink-bg">
+      <div class="container-fluid">
+        <a class="navbar-brand logo-barra2"> TUDI </a>
+        <button class="navbar-toggler vacio-bg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation" margin-left="1vw">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header pink-bg">
+            <h5 class="offcanvas-title Logo-hamburguesa" id="offcanvasNavbarLabel "> TUDI </h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body pink-bg">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active item-hamburguesa" aria-current="page" href="../index.html"> Home </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item-hamburguesa" href="equipo.html"> Equipo </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item-hamburguesa" href="experiencia.html"> Portfolio </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item-hamburguesa" href="cursos.html"> Cursos </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link item-hamburguesa" href="charlemos.html"> Charlemos </a>
+              
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="charlemos">
+      <nav class="texto1">
+        <p class="justificado">
+          En nuestro compromiso por ofrecerte la mejor experiencia, creemos que es fundamental generar una conversación clara y abierta. Estamos aquí para resolver cualquier duda que pueda surgirte durante tu visita en nuestra página. 
+        </p>
+        <p class="centrado">
+          Nos encantaría escucharte y saber cómo podemos ayudarte. 
+        </p> 
+      </nav>
+      <nav class="texto2">
+        <p class="justificado">
+          No dudes en contactarnos, tu
+          opinión es muy importante para nosotros.
+          Completa el formulario a continuación para una atención más personalizada, pronto nos comunicaremos a través del medio de tu elección
+        </p>
+      </nav>
+      <nav class="imag">
+        <img src="/imagenes/img12.jpg" alt="Imagen representativa de diseño de un espacio arquitectónico en tonos verdes y rosas">
+      </nav>
+
+    <form class="formulario">
+      <select class="form-select mb-3">
+        <option class="consigna-principal"> ¿Ya sos cliente? </option>
+        <option value="1" class="consigna-interior"> Si </option>
+        <option value="2" class="consigna-interior"> No </option>
+      </select>
+      <select class="form-select mb-3" aria-label="Default select example">
+        <option selected class="consigna-principal"> Elegí el motivo de tu consulta </option>
+        <option value="1" class="consigna-interior"> Me interesa uno de sus cursos </option>
+        <option value="2" class="consigna-interior"> Me interesa comenzar un proyecto </option>
+      </select>
+      <div class="mb-3">
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Describinos tu consulta">
+      </div>
+      <div>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email o teléfono de contacto">
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input " id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1"> Acepto ser contactado </label>
+      </div>
+      <button type="submit " class="btn pink-bg "> Charlemos </button>
+    </form>
+  </main>
+
+    <!--script jss-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+<footer>
+  <div class="footer-pink">
+    <a href="mailto:tudiseños@ejemplo.com?subject=Consulta" target="_blank"><img src="imagenes/img14.png" alt="Icono mail"></a>
+    <a href="https://web.whatsapp.com/send?phone=541127081705" target="_blank"><img src="imagenes/img15.png" alt="Icono telefono"></a>
+    <a href="https://www.instagram.com/lu.visonadp/" target="_blank"><img src="imagenes/img13.png" alt="Icono Instagram"></a>
+  </div>
+</footer>
+
+</html>

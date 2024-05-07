@@ -1,0 +1,131 @@
+@media screen and (min-width: 1024px){
+    body.home{
+        main{
+            display:grid; 
+            padding:15px;
+            gap:15px;
+            height: 100vh;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            overflow: hidden;
+
+            .img-uno, .img-dos{
+                display:block
+            }
+
+            .home-tres{
+                grid-row: span 2;
+            }
+        }
+    }
+
+    main.equipo{
+        display: grid;
+        height: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 0.75fr 0.25fr;
+
+        div.equipo-img-uno, div.equipo-img-dos, div.equipo-img-tres{
+            width: 100%;
+            height: 100%;
+            object-fit: cover ;
+            overflow: hidden ;
+            justify-self: center;
+            grid-row: 1 / span 1 ;            
+        }
+    }
+
+    main.portfolio{
+        display:grid; 
+        margin-top: 5vw;
+        height: 40vh;
+        grid-template-columns:50% 50%;
+        grid-template-rows: repeat(6, 90%);
+        gap: 10px;
+        
+        div img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            overflow: hidden;
+        }
+    }
+
+    main.cursos{
+        display: grid;
+        margin-top: 4.5vw ;
+        .texto-cursos{
+            font-size: 1.5vw;
+        }
+    }
+
+    main.charlemos{
+        display: grid;
+        height: 90vh;
+        margin-top: 3%;
+        gap: 15px;
+        grid-template-columns: 70% 30%;
+        grid-template-rows: 1fr 1fr 1fr ;
+        nav.imag{
+            img{
+                display: block;
+                grid-row: 2 / span 1 ;
+                grid-column: 1 / span 3 ;
+                object-fit: cover;
+                overflow: hidden;  
+                background-color: #441212;
+                padding: 10px;
+                 
+                
+            }
+        }
+        nav.texto1{
+            p.justificado{
+                font-size: 2vw;
+                grid-column: 1 / span 1;
+            }
+            p.centrado{
+                font-size: 1.5vw;
+                grid-column: 1 / span 1;
+            }
+        }
+        nav.texto2{
+            p.justificado{
+                font-size: 2vw;
+                grid-column: 2 / 3;
+            }
+            p.centrado{
+                font-size: 1.5vw;
+                grid-column: 2 / 3;
+            }
+        }
+        
+        form{
+            height: 100%;
+            align-content: justify;
+        }
+
+    }
+
+    footer{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+
+        .footer-pink{
+            display: flex;
+            justify-content: right;
+            background-color: rgb(223, 172, 160);
+            height: 45px;
+
+            a{
+                margin: 7px;}
+
+            img{
+                height: 100%;
+            }
+
+        }
+    }
+
+}
