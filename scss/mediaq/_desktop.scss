@@ -1,5 +1,14 @@
 @media screen and (min-width: 1024px){
     body.home{
+        header{
+            nav.navbar-brand.logo-barra2{
+                button.navbar-toggler.white-button{
+                    height: 4vw;
+                    background-color: $color3;
+                    
+                }
+            }
+        }
         main{
             display:grid; 
             padding:15px;

@@ -2,6 +2,8 @@
 
 
 header{
+
+
     .pink-bg{
         background-color: $color2 ;
     }
@@ -13,18 +15,23 @@ header{
     }
 
     nav{
+        .pink-bg{
+            height: 3%;
+            bottom: 3%;
+        }
+
         a.logo-barra{
             color:$color1;
             background-color: $color3;
             font-family: $letra;
-            font-size: 5vw;
+            font-size: 4vw;
             font-weight: 700;
         }
         a.logo-barra2{
             color:  $color1;
             background-color:none;
             font-family: $letra;
-            font-size:5vw;
+            font-size:4vw;
             font-weight: 700;
         }
 
@@ -78,7 +85,7 @@ footer{
     display: flex;
     justify-content: right;
     background-color:$color2;
-    height: 45px; 
+    height: 2%; 
     a{
         margin: 7px;
     }
