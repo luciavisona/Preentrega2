@@ -6,6 +6,7 @@ header{
 
     .pink-bg{
         background-color: $color2 ;
+        height:60px;
     }
     .vacio-bg{
         background-color: $color4 ;
@@ -13,10 +14,11 @@ header{
     .grey-bg{
         background-color: $color3;
     }
+    
 
     nav{
         .pink-bg{
-            height: 3%;
+            height: 30px;
             bottom: 3%;
         }
 
@@ -24,22 +26,24 @@ header{
             color:$color1;
             background-color: $color3;
             font-family: $letra;
-            font-size: 4vw;
+            font-size: 40px;
             font-weight: 700;
+            text-decoration: none;
         }
         a.logo-barra2{
             color:  $color1;
             background-color:none;
             font-family: $letra;
-            font-size:4vw;
-            font-weight: 700;
+            font-size:30px;
+            font-weight: 500;
+            text-decoration:none;
         }
 
         .logo-hamburguesa{
             color: $color1;
             font-family: $letra;
             font-size:large;
-            font-weight: 700;
+            font-weight: 500;
         }
 
         .item-hamburguesa{
@@ -51,13 +55,15 @@ header{
     }
 }
 body.home{
-    background-color: $color1 ;
+    background-color: $color3;
+    background-image: url(../../imagenes/img18.jpg) ;
+    
         div{
-            img{
-                margin-top: 20% ;
+            img{                
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
+                
             }
             button{
                 .white-button{
@@ -67,59 +73,70 @@ body.home{
     }
     main{
         display: grid;
-        gap: 20px;
+        gap: 10px;
         grid-template-rows: auto 1fr auto;
+
+        div.subtitulo1{
+            h1{
+            font-family: $letra;
+            color: $color2;
+            text-align: center;
+            margin-top: 70px;
+            font-size: 3vw;
+            padding-right: 60px;
+            padding-left: 30px;
+            }
+        }
+
+        .home-tres{
+            padding: 10px;
+        }
 
         .home-uno, .home-dos{
             display: none;
         }
     }
 }
-
-footer{
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
-    .footer-pink{
-    display: flex;
-    justify-content: right;
-    background-color:$color2;
-    height: 2%; 
-    a{
-        margin: 7px;
-    }
-    img{
-        height: 100%;
-    }
-    }
-}
-
 main.equipo{
     display:grid; 
-
-    margin-top: 15%;
-    padding: 7%;
+    padding-top: 70px;
+    padding-left: 20px;
+    padding-right:20px;
+    padding-bottom: 40px;
     grid-template-columns:1fr;
     grid-template-rows: auto;
     text-align: center;
 
     div{
         img{
-        width: 100%;
-        height: 100%;
+        width: 50%;
         object-fit: cover;
         overflow: hidden;
+        background-color: $color1;
+        border-radius: 10%;
+        }
+        h2{
+        display:inline-block;
+        width: 80%;
+        color:$color3;
+        background-color: $color2;
+        }
+        p{
+            display: inline-block;
+            padding:none, 40px;
+            text-align: justify;
         }
     }
 }
 
 main.portfolio{
     display: grid;
-    padding: 7%;
+    margin-top: 70px;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(3,35%);
     gap: 1%;
+    height: 80vh;
+    overflow: hidden;
 
     div{
         img{
@@ -134,16 +151,20 @@ main.portfolio{
 main.cursos{
     display:grid; 
     margin-top: 15%;
+    margin-bottom: 30px;
     padding: 7%;
     grid-template-columns: repeat(4, auto);
-    grid-template-rows: repeat(4, auto);
+    grid-template-rows: 30% 0.12fr 0.2fr 0.12fr;
+    row-gap: 10px;
+    height: 91vh;
 
-    nav.img-cursos-principal{
+    div.img-cursos-principal{
+        display:inline-block;
         grid-column: 1 / span 4 ;
+        grid-row: 1/ span 1;
         img{
             width: 100%;
             height: 100%;
-            height: auto;
             object-fit: cover;
             overflow: hidden;
             }
@@ -192,53 +213,91 @@ main.cursos{
 main.charlemos{
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 10%,;
-    margin-bottom: 50%;
+    grid-template-rows: 35% 0.2fr 0.15fr 40%;
+    margin-top: 65px;
+    margin-bottom: 20%;
     padding:7%;
     align-items: center;
     text-align: center;
-    height: 80vh;
+    height: 120vh;
+    row-gap: 15px;
+    
 
-   nav.texto1, nav.texto2{
+    div.imag{
+        grid-row: 1/span 1;
+        height: 100%;
+        padding:10px;
+        img{
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+    }    
+
+   nav.texto1{
+    grid-row: 2/span 1;
+    padding: 7px;
         p.justificado{
             font-family: $letra;
-            font-weight: 500;
+            font-weight: 200;
             text-align: justify;
-            font-size: 2.5vw;
+            padding-top: none;
+            font-size: 3vw;
         }
         
         p.centrado{
             font-family: $letra;
+            display: inline-block;
+            width: 100%;
+            background-color: $color2;
             font-style: italic;
             text-align: justify;
-            margin-left: 20%;
-            margin-right: 20%;
-            font-size: 2.5vw;
+            color: $color1;
+            padding-left: 10%;
+            padding-right: 10%;
+            border-radius: 5%;
+            font-size: 3.5vw;
+        }
+      
+    }
+
+    nav.texto2{
+        grid-row: 3/span 1;
+        padding: 7px;
+        p.justificado{
+            font-family: $letra;
+            font-weight: 200;
+            text-align: justify;
+            padding-top: none;
+            font-size: 3vw;
         }
     }
-    nav.imag{
-        img{
-            display: none;
-        }
-    }    
+
+    
     form.formulario{
+        display: block;
+        grid-row: 4/span 1;
         padding: 5px;
         border: 2px solid $color1;
         border-radius: 10px;
-        bottom: 45px;
+        margin-bottom: 55px;
+        font-size: 3.5vw;
+        
 
         .consigna-principal{
-            font-size: 3vw;
+            font-size: 1.5vh;
         }
 
         label.consigna{
             justify-items: left;
-            font-size: 1.5vw;
+            font-size: 1.5vh;
         }
 
         .consigna-interior{
             font-family: $letra;
-            font-size: 3vw;
+            font-size: 1.5vh;
         }
 
         button.pink-bg{
@@ -246,6 +305,25 @@ main.charlemos{
             color: $color2;
             width: 100%;
         }
+    }
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+    .footer-pink{
+    display: flex;
+    justify-content: right;
+    background-color:$color2;
+    height: 45px; 
+    a{
+        padding:5px;
+        margin-bottom: 10px;
+    }
+    img{
+        height: 100%;
+    }
     }
 }
 
